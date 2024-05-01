@@ -53,5 +53,15 @@
 .sidebar__chats {
     flex: 1;
     background-color: white;
-    overflow: hidden;
+    overflow: scroll;
+}
+
+/* Hide scrollbar for WebKit (Chrome, Safari, etc.) */
+.sidebar__chats::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.sidebar__chats {
+    scrollbar-width: none;
 }
